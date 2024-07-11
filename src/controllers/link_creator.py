@@ -1,5 +1,5 @@
-from typing import Dict
 import uuid
+from typing import Dict
 
 class LinkCreator:
     def __init__(self, link_repository) -> None:
@@ -8,7 +8,6 @@ class LinkCreator:
     def create(self, body, trip_id) -> Dict:
         try:
             link_id = str(uuid.uuid4())
-            #link_infos = { **body, "id": link_id, "trip_id": trip_id }
             link_infos = {
                 "link": body["url"],
                 "title": body["title"],

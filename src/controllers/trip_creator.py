@@ -1,5 +1,5 @@
-from typing import Dict
 import uuid
+from typing import Dict
 
 class TripCreator:
     def __init__(self, trip_repository, emails_repository) -> None:
